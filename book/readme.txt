@@ -3,7 +3,7 @@ Contributors: Kenwoo
 Tags: book, publisher, custom post type, meta field
 License: GPLv2 or later
 
-Book creates custom post type with an additional meta called "Publisher.
+Book creates custom post type with an additional meta called "Publisher".
 
 == Description ==
 

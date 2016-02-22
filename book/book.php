@@ -13,13 +13,13 @@
 */
 namespace plugins\book;
 
-use plugins\book\bookContainer;
-
 define( 'PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 
 require_once ( PLUGIN_DIR . "bookContainer.php" );
 require_once ( PLUGIN_DIR . "metaBoxes.php" );
 require_once ( PLUGIN_DIR . "bookShortCode.php" );
+
+use plugins\book\bookContainer;
 
 if ( is_admin()){
     add_action( 'init', array( new bookContainer, 'createBook' ) );
