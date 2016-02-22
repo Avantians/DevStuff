@@ -9,3 +9,6 @@ Keep them to test
 #### book
 * This is simple book wordpress plug-in
 * Book creates custom post type with an additional meta called "Publisher".
+
+#### myFolder
+* This is simple php application with Jquery calculation.
