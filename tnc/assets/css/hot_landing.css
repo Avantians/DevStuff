@@ -1,0 +1,928 @@
+.redbar {
+    background: #e11a20 none repeat scroll 0 0;
+    color: #fff;
+    height: 58px;
+}
+.red-box-container {
+    margin: 0 auto;
+    width: 1220px;
+}
+.red-box-container2 {
+    height: 58px;
+    padding: 0;
+}
+.logo {
+    float: left;
+}
+.header-block-right-2 {
+    float: right;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.header-block-right {
+    float: right;
+    line-height: 1.7em;
+    padding-right: 5px;
+}
+.header-block-left {
+    float: left;
+}
+.contact-note {
+    font-family: "HelveticaNeueW01-55Roma";
+    font-size: 12px;
+}
+.contact-number {
+    font-family: "HelveticaNeueW01-55Roma";
+    font-size: 32px;
+}
+.contact-hours {
+    font-family: roboto-light;
+    font-size: 9px;
+}
+.contact-hours p {
+    margin: 0;
+    padding: 0;
+}
+.header-label {
+    font-family: "HelveticaNeueW01-45Ligh";
+    font-size: 24px;
+    height: 58px;
+    line-height: 58px;
+}
+.redbar br {
+    display: block;
+    margin: -4px 0;
+}
+
+.modal {
+    padding-top: 15%;
+    height: 100%;
+    width: 100%;
+    overflow-y: visible;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.7);
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -moz-opacity: 1;
+}
+.modal-dialog {
+    z-index: 1000;
+    margin: auto;
+    padding: 10px;
+    width: 500px;
+    border-radius: 10px;
+}
+.modal-header {
+    padding: 0;
+    border-bottom: none;
+}
+.modal-footer {
+    padding: 0;
+    border-top: none;
+    text-align: center;;
+}
+
+.modal-header h4, .modal-footer h4 {
+    margin: 0 auto 30px;
+    padding: 20px 0 0;
+    text-align: center;
+    line-height: 1em;
+}
+.modal-footer h4 {
+    line-height: 2em;
+}
+.modal-footer h4 strong {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    display: table;
+}
+.modal-header h4 div {
+    margin: 0 2%;
+    background: rgba(0, 0, 0, 0) url("../images/Vacation_icn.png") no-repeat scroll center bottom;
+    display: inline-table;
+    position: relative;
+    top: 15px;
+    width: 60px;
+    height: 55px;
+}
+.price-calendar {
+    background: #fffef4 url("../images/BPC_final_V_02_bg.png") no-repeat scroll center bottom;
+    display: table;
+    margin: 40px auto;
+    padding: 0;
+    width: 1180px;
+}
+#page0 {
+    display: none;
+}
+.tab-bar {
+    min-height: 85px;
+}
+.tabs, .unstyled {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.tabs li {
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    font-weight: 900;
+    height: 85px;
+    line-height: 1em;
+    padding: 12px 0;
+    text-align: center;
+    width: 168px;
+}
+.tabs li.active {
+    background-color: rgba(255, 255, 255, 1);
+}
+.tabs li > div.rightborder {
+    border-right: 1px solid rgba(125, 125, 125, 0.3);
+}
+.tabs li:first-child {
+    background-color: rgba(219, 34, 39, 0.8);
+    color: #fff;
+    padding: 22px 0;
+    width: 172px;
+}
+.tabs li:first-child p {
+    float: left;
+    font-size: 20px;
+    line-height: 1.04em;
+    margin: 0 0 0 20px;
+    padding: 0;
+    width: 100px;
+}
+.tabs li:first-child i {
+    left: -8px;
+    position: relative;
+    top: 6px;
+}
+.tabs li:first-child:hover {
+    background-color: rgba(219, 34, 39, 1);
+}
+.tabs li.grayOut:first-child {
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: default;
+}
+.tabs li.grayOut:first-child:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.tabs li:nth-child(7) > div.rightborder {
+    border-right: medium none;
+    margin: 0;
+    padding: 0;
+}
+.tabs li span {
+    display: table;
+    text-align: center;
+    width: 100%;
+}
+.tabs li span[id*="dM"] {
+    color: #db2227;
+    display: table;
+    font-size: 18px;
+    padding-top: 4px;
+    text-align: center;
+    width: 100%;
+}
+.glyphicon-plus {
+    font-size: 28px;
+}
+.glyphicon-star {
+    color: #f89520;
+}
+.price-calendar-search {
+    border-top: 1px solid rgba(125, 125, 125, 0.2);
+    box-shadow: 0 15px 20px -20px rgba(125, 125, 125, 0.6) inset;
+    margin-top: 2px;
+    min-height: 730px;
+}
+@-moz-document url-prefix("") {
+    .header-block-right {
+        line-height: 2em;
+    }
+}
+select.slt {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+        -ms-appearance: none;
+         -o-appearance: none;
+            appearance: none;
+    background: #ffffff url("../images/select-down-grey.png") no-repeat scroll right 4px top 50%;
+    color: #7c7c7c;
+    cursor: pointer;
+    font-family: "HelveticaNeueW01-55Roma";
+    font-size: 16px;
+    outline: medium none;
+}
+select::-ms-expand {
+    display: none;
+}
+input.NoIcon {
+    background: #ffffff url("../images/select-down-grey.png") no-repeat scroll right 4px top 50%;
+    color: #7c7c7c;
+    cursor: pointer;
+    font-family: "HelveticaNeueW01-55Roma";
+    font-size: 16px;
+    outline: medium none;
+}
+.closeTab {
+    background-color: rgba(219, 34, 39, 0.8);
+    border: 3px solid rgba(219, 34, 39, 1);
+    border-radius: 20px;
+    color: #fff;
+    display: table;
+    font-family: "HelveticaNeueW01-75Bold";
+    font-size: 15px;
+    margin: 10px 15px auto auto;
+    padding: 5px;
+    position: relative;
+    width: 90px;
+    z-index: 200;
+}
+.tab_content{ margin-top: 60px; }
+.tab_content form {
+    margin: 0 auto 10px;
+    width: 1062px;
+}
+.tab_content form h2 {
+    font-family: "HelveticaNeueW01-75Bold";
+    font-size: 37px;
+    font-weight: bolder;
+    text-align: center;
+}
+.destElements {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    box-shadow: 1px 2px 2px 0 rgba(150, 150, 150, 1);
+    display: table;
+    margin: 50px auto 0;
+    padding: 30px 15px;
+    width: 100%;
+}
+.optionElements {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    box-shadow: 1px 2px 2px 0 rgba(150, 150, 150, 1);
+    display: table;
+    margin: 50px auto 0;
+    padding: 15px;
+    width: 850px;
+}
+.optionElements .inclusiveList {
+    background: #fff none repeat scroll 0 0;
+    clear: both;
+    margin-bottom: 25px;
+    padding: 20px;
+}
+.optionElements .star-rating {
+    background: #fff none repeat scroll 0 0;
+    clear: both;
+    padding: 20px;
+}
+.inclusiveList label {
+    color: #333;
+    cursor: pointer;
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1em;
+    margin-bottom: 0;
+    text-transform: none;
+}
+.inclusiveList input[type="checkbox"] {
+    font-weight: normal;
+    margin-right: 7px;
+    position: relative;
+    top: -1px;
+}
+.star-rating label {
+    color: #333;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1em;
+    margin-bottom: 0;
+    text-transform: none;
+}
+.star-rating input[type="checkbox"] {
+    font-weight: normal;
+    margin-right: 7px;
+    position: relative;
+    top: -2px;
+}
+.star-rating input + span {
+    display: inline-block;
+    padding-right: 0;
+}
+.star-rating span > .glyphicon-star {
+    position: relative;
+    top: 2px;
+}
+.inclusiveList dl {
+    margin: 0;
+}
+.inclusiveList dl dt {
+    position: relative;
+    top: 16px;
+    display: table;
+}
+.inclusiveList dt.dt-4 {
+    float: left;
+    line-height: 1em;
+    width: 125px;
+}
+.inclusiveList dt.dt-4 label {
+    text-align: right;
+}
+.inclusiveList dd {
+    display: table;
+}
+.inclusiveList dd.dd-10 {
+    float: right;
+    padding-left: 0;
+    width: 625px;
+}
+.inclusiveList dd ul {
+    display: table;
+    width: 625px;
+}
+.inclusiveList dd ul:first-child {
+    margin-bottom: 15px;
+}
+.inclusiveList dd ul li.li-3 {
+    float: left;
+    line-height: 1em;
+    width: 20%;
+}
+.emptyArea {
+    height: 37px;
+    margin-top: 10px;
+}
+.input-group-addon {
+    background-color: #c9302c;
+    border-color: #ac2925;
+    color: #fff;
+}
+.star-rating .li-2 {
+    float: left;
+    padding: 0 10px;
+    width: 10.75%;
+    dispaly: table;
+}
+.li-4 {
+    float: right;
+    width: 24.69%;
+}
+.fromSelect {
+    float: left;
+    margin-right: 23px;
+    width: 22.4%;
+}
+.toSelect {
+    float: left;
+    margin-right: 23px;
+    width: 23%;
+}
+.montheSelect {
+    float: left;
+    margin-right: 23px;
+    width: 23%;
+}
+.search-btn {
+    font-size: 25px;
+    margin: 30px auto 0;
+    padding: 7px 45px;
+    position: relative;
+}
+.update-btn {
+    cursor: pointer;
+    font-size: 25px;
+    margin: 0 auto 30px;
+    padding: 7px 45px;
+    position: relative;
+    width: 200px;
+}
+.bootNow-btn {
+    font-size: 15px;
+    margin: 0 auto;
+    width: 120px;
+    padding: 5px 15px;
+    position: relative;
+}
+.own-btn {
+    background: #c9302c none repeat scroll 0 0;
+    border: 1px solid #ac2925;
+    border-radius: 10px;
+    box-shadow: 0 5px 0 #84261a;
+    color: #ffffff;
+    display: table;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+    /*transition: all 0.2s ease-in-out 0s;*/
+}
+div.openPanel {
+    display: table;
+}
+div.closePanel {
+    display: none;
+}
+.gatewayDestinatonHead {
+    font-family: "HelveticaNeueW01-75Bold";
+    font-size: 30px;
+    margin: 0 auto 20px;
+    text-align: center;
+    width: 800px;
+}
+.gatewayDestinatonHead span {
+    background: rgba(0, 0, 0, 0) url("../images/Vacation_icn.png") no-repeat scroll center bottom;
+    display: inline-table;
+    margin: 0 2%;
+    width: 60px;
+    height: 55px;
+    position: relative;
+    top: 15px;
+}
+.monthHead {
+    border-bottom: 5px solid rgba(216, 36, 40, 1);
+    font-family: "HelveticaNeueW01-75Bold";
+    font-size: 45px;
+    margin: 0 auto 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 800px;
+}
+#switchPanel {
+    display: table;
+    margin: 30px auto;
+    padding: 0 130px;
+    width: 100%;
+}
+#switchPanel ul li {
+    font-family: "HelveticaNeueW01-55Roma";
+    font-size: 15px;
+}
+li.viewMode {
+    float: left;
+}
+.material-switch { display: table; }
+.material-switch > input[type="checkbox"] {
+    display: none;
+}
+.material-switch > label {
+    cursor: pointer;
+    height: 0;
+    position: relative;
+    width: 40px;
+}
+.material-switch > label::before {
+    background: rgb(0, 0, 0) none repeat scroll 0 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
+    content: "";
+    height: 16px;
+    margin-top: -8px;
+    opacity: 0.3;
+    position: absolute;
+    transition: all 0.3s ease-in-out 0s;
+    width: 40px;
+}
+.material-switch > label::after {
+    background: rgb(255, 255, 255) none repeat scroll 0 0;
+    border: 5px solid #ccc;
+    border-radius: 16px;
+    content: "";
+    height: 24px;
+    left: -4px;
+    margin-top: -8px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.2s ease-in-out 0s;
+    width: 24px;
+}
+.material-switch > span {
+    cursor: pointer;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+    background: inherit;
+    opacity: 0.5;
+}
+.material-switch > input[type="checkbox"]:checked + label::after {
+    background: inherit;
+    left: 20px;
+}
+li.showFilters {
+    cursor: pointer;
+    float: right;
+    position: relative;
+    display: table;
+}
+li.showFilters .glyphicon-menu-hamburger {
+    background: #c9302c none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px;
+    position: relative;
+    top: 4px;
+}
+.rotateAct {
+    transform: rotate(90deg);
+}
+#filterPanel {
+    border-bottom: 1px solid rgba(155, 155, 155, 0.6);
+    border-top: 1px solid rgba(155, 155, 155, 0.6);
+    display: table;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    width: 100%;
+}
+#filterSlidePanel {
+    display: table;
+    margin: 0 auto;
+    width: 100%;
+}
+#filterSlidePanel dd {
+    float: left;
+    margin-right: 15px;
+    width: 32.39%;
+}
+#filterSlidePanel dd:last-child {
+    float: right;
+    margin-right: 0;
+}
+#filterSlidePanel dd p {
+    font-family: "HelveticaNeueW01-75Bold";
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+#filterSlidePanel dd span {
+    font-family: "HelveticaNeueW01-55Roma";
+    font-size: 17px;
+    margin-left: 10px;
+}
+#filterSlidePanel dd input {
+    margin: 0;
+    position: relative;
+    top: -2px;
+}
+.spOne, .spTwo, .starsOne, .starsTwo {
+    display: table;
+    float: left;
+    width: 50%;
+}
+.spOne li, .spTwo li {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.starsOne li .glyphicon-star, .starsTwo li .glyphicon-star {
+    position: relative;
+    top: 3px;
+}
+.starsOne li {
+    margin-left: 30px;
+    margin-top: 10px;
+    padding-left: 65px;
+}
+.starsTwo li {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.daysOne, .daysTwo, .daysThree {
+    display: table;
+    float: left;
+    width: 45%;
+}
+.daysOne li {
+    margin-left: 50px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.daysTwo li, .daysThree li {
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+#filterSlidePanel .daysOne li span, #filterSlidePanel .daysTwo li span, #filterSlidePanel .daysThree li span {
+    margin-left: 5px;
+}
+#filterSection {
+    display: table;
+    margin-bottom: 30px;
+    width: 100%;
+}
+#filterSection ul.stars li {
+    width: 125px;
+}
+#filterSection ul.stars li:nth-child(7) {
+    margin-right: 0;
+}
+#filterSection ul.stars li:last-child {
+    margin-right: 0;
+}
+#filterSection ul.stars li > span {
+    padding-left: 10px;
+}
+#filterSection ul.stars li > span i.glyphicon-star {
+    font-size: 21px;
+    padding-left: 5px;
+    position: relative;
+    top: 4px;
+}
+#filterSection ul {
+    display: table;
+    list-style: outside none none;
+    margin: 0 15px;
+    padding: 0;
+}
+#filterSection ul li {
+    background: #c9302c none repeat scroll 0 0;
+    border: 1px solid #ac2925;
+    border-radius: 10px;
+    box-shadow: 0 -1px 1px #8d1417 inset;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    padding: 5px 11px;
+}
+#filterSection ul li span {
+    color: #fff;
+    font-family: "HelveticaNeueW01-75Bold";
+    font-size: 18px;
+    position: relative;
+    top: -2px;
+}
+#filterSection .glyphicon-remove {
+    background: #b9b9b9 none repeat scroll 0 0;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    font-size: 15px;
+    height: 24px;
+    line-height: 1.55em;
+    margin-left: 10px;
+    padding-left: 1px;
+    padding-top: 2px;
+    text-align: center;
+    width: 24px;
+}
+@-moz-document url-prefix("") {
+#filterSection .glyphicon-remove {
+    padding-left: 0;
+    padding-top: 1px;
+}
+}
+#calendar, #calender_list {
+    margin-bottom: 60px;
+    width: 100%;
+}
+#calendar > a, #calender_list > a {
+    color: #8e352e;
+    text-decoration: none;
+}
+#calendar ul {
+    display: table;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#calendar li {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    margin-bottom: -1px;
+    margin-right: -1px;
+    padding: 5px;
+    width: 14.342%;
+}
+#calendar ul.weekdays li {
+    background-color: rgba(39, 47, 53, 1);
+    border: medium none !important;
+    color: rgba(255, 255, 255, 1);
+    font-family: "HelveticaNeueW01-75Bold";
+    font-size: 15px;
+    line-height: 1.5em;
+    padding: 15px 6px;
+    text-align: center;
+}
+#calendar .days li {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    height: 120px;
+}
+#calendar .days li:hover {
+    background-color: rgba(210, 210, 210, 0.8);
+    cursor: pointer;
+}
+#calendar .days li.actSec {
+    background-color: rgba(216, 36, 40, 1);
+}
+#calendar .days li.actSec .event {
+    display: none;
+}
+#calendar .days li.actSec .date {
+    color: rgba(255, 255, 255, 1);
+}
+#calendar li.otherMonth {
+    background-color: rgba(208, 211, 211, 1);
+}
+#calendar li.otherMonth:hover {
+    background-color: rgba(208, 211, 211, 1);
+    cursor: auto;
+}
+#calendar li.passedDay:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: auto;
+}
+#calendar .date {
+    color: rgba(39, 47, 53, 1);
+    display: table;
+    font-family: "HelveticaNeueW01-55Roma";
+    font-size: 15px;
+    padding-left: 5px;
+    padding-top: 5px;
+    text-align: left;
+    width: 100%;
+}
+#calendar li.lowest {
+    color: rgba(216, 36, 40, 1);
+}
+#calendar .event {
+    font-family: "HelveticaNeueW01-75Bold";
+    font-size: 25px;
+    line-height: 1em;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+#calendar .event div {
+    padding-bottom: 5px;
+}
+#calendar .event span {
+    font-family: "HelveticaNeueW01-55Roma";
+    font-size: 20px;
+    color: #000;
+}
+#calendar .event span .glyphicon-star {
+    font-size: 21px;
+    letter-spacing: -2px;
+    position: relative;
+    top: 3px;
+}
+#calender_list table {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#calender_list table th {
+    background-color: rgba(39, 47, 53, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: "HelveticaNeueW01-55Roma";
+    font-size: 18px;
+    line-height: 1.5em;
+    padding: 10px 6px;
+    text-align: center;
+    width: 11%;
+}
+#calender_list table th:first-child {
+    width: 23%;
+}
+#calender_list table th .glyphicon-star {
+    font-size: 20px;
+    position: relative;
+    top: 4px;
+}
+#calender_list table tr:nth-child(2n) {
+    background: #e4e4e4 none repeat scroll 0 0;
+}
+#calender_list table tr:nth-child(2n+1) {
+    background: #fff none repeat scroll 0 0;
+}
+#calender_list table td {
+    cursor: pointer;
+    font-family: "HelveticaNeueW01-55Roma";
+    font-size: 18px;
+    padding: 12px 6px;
+    text-align: center;
+}
+#calender_list table td:hover {
+    text-decoration: underline;
+}
+#calender_list table td:first-child {
+    padding-left: 25px;
+    text-align: left;
+}
+#calender_list table td.lowest {
+    color: rgba(216, 36, 40, 1);
+}
+.popover {
+    background-color: rgba(255, 255, 255, 0.6);
+    max-width: 456px;
+    padding: 2px;
+}
+.popover-content {
+    padding: 0;
+}
+.newbtn {
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bolder;
+    left: 83px;
+    padding: 6px 7px;
+    position: relative;
+    top: -90px;
+    border: none;
+}
+.btn {
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bolder;
+    left: 430px;
+    padding: 0 7px;
+    position: relative;
+    top: -12px;
+}
+.popover .arrow {
+    display: none;
+}
+.btn-primary {
+    background-color: rgba(80, 80, 80, 1);
+    border-color: rgba(75, 75, 75, 1);
+}
+.btn-primary:hover {
+    background-color: rgba(90, 90, 90, 1);
+    border-color: rgba(80, 80, 80, 1);
+}
+.popup-info {
+    border-radius: 5px;
+    height: 300px;
+    position: relative;
+    width: 450px;
+}
+.overlayer {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0 0 5px 5px;
+    bottom: 0;
+    color: rgba(255, 255, 255, 1);
+    font-family: "HelveticaNeueW01-75Bold";
+    height: 120px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+.leftSideInfo {
+    float: left;
+    padding-left: 20px;
+    padding-top: 15px;
+    width: 150px;
+}
+.leftSideInfo a {
+    cursor: pointer;
+    text-decoration: none;
+}
+.leftSideInfo a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+.rightSideInfo {
+    float: right;
+    padding-right: 20px;
+    padding-top: 12px;
+    width: 300px;
+}
+.overlayer span {
+    display: table;
+    width: 100%;
+}
+.location-price {
+    font-size: 30px;
+    text-align: center;
+}
+.locaiton-place {
+    font-size: 20px;
+    text-align: right;
+}
+.location-city, .location-days {
+    font-family: "HelveticaNeueW01-55Roma";
+    font-size: 12px;
+    text-align: right;
+}
+.location-stars {
+    padding-top: 10px;
+}
+.location-stars > .glyphicon-star {
+    font-size: 25px;
+}
