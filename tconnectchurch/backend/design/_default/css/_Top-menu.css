@@ -1,0 +1,42 @@
+.top-menu {height: 63px;display: block;}
+ul#topnav {
+	margin: 0; 
+	float: left;
+	min-width:1024px !important;
+	width: 100%;
+	list-style: none;
+	position: relative;
+	font-size: 1.0em;
+	background: url(/backend/templates/default/images/topnav_stretch.gif) repeat-x;
+}
+ul#topnav li {
+	float: left;
+	margin: 0;
+	border-right: 1px solid #555;
+}
+ul#topnav li a {
+	padding: 8px 20px;
+	display: block;
+	color: #f0f0f0;
+	text-decoration: none;
+}
+ul#topnav li:hover { background: #1376c9 url(/backend/templates/default/images/topnav_active.gif) repeat-x; }
+ul#topnav li span {
+	float: left;
+	padding: 4px 0;
+	position: absolute;
+	left: 0; top:34px;
+	display: none;
+	width: 100%;
+	background: #1376c9;
+	color: #fff;
+	-moz-border-radius-bottomright: 5px;
+	-khtml-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-khtml-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+ul#topnav li:hover span { display: block; }
+ul#topnav li span a { display: inline; }
+ul#topnav li span a:hover {text-decoration: underline;}

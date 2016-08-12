@@ -1,0 +1,2 @@
+#top-link { display:none; position:fixed; right:30px; bottom:30px; padding:0 0 0 7px; color:#696969; width:65px; height:20px; font-size:9px; font-weight:bold; text-decoration:none; border:1px solid #CCCCCC; background:#eceff5; }
+#top-link:hover { text-decoration:underline; }

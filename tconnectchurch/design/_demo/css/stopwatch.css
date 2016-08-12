@@ -1,0 +1,90 @@
+﻿
+#timecontainer {
+    background: none repeat scroll 0 0 #eee;
+    margin: 10px auto 0;
+    padding: 20px;
+    position: relative;
+    z-index: 100;
+}
+#stopwatch {
+    color: #cc0000;
+    font-size: 46px;
+    line-height: 46px;
+    margin: 0;
+}
+#lablesalign {
+    display: block;
+    float: right;
+}
+#swlabels {
+    color: #ffffff;
+    height: 30px;
+    list-style: none outside none;
+    margin: 0 0 10px;
+    padding: 0;
+}
+#swlabels li a:active {
+    color: #ffffff;
+    position: relative;
+    top: 1px;
+}
+#swlabels li {
+    color: #ffffff;
+    display: inline;
+    float: right;
+    margin-right: 5px;
+}
+#swlabels li a {
+    color: #fff;
+    display: block;
+    line-height: 38px;
+    margin: 15px 5px;
+    outline: medium none;
+    text-align: center;
+    text-decoration: none;
+    width: 110px;
+}
+#swlabels li a:hover {
+    color: #ffffff;
+}
+#swlabels {
+    color: #666;
+}
+#slabels span {
+    margin-left: 36px;
+}
+#start {
+    background: none repeat scroll 0 0 #ee0000;
+}
+#set {
+    background: none repeat scroll 0 0 #000000;
+}
+#reset {
+    background: none repeat scroll 0 0 #999999;
+}
+#sets {
+    background: none repeat scroll 0 0 #f9f9f9;
+    display: none;
+    list-style: none outside none;
+    margin: 20px 0 0;
+    padding: 0;
+}
+#sets li {
+    display: none;
+    font-size: 18px;
+    line-height: 36px;
+    margin: 5px;
+    padding: 5px 10px;
+}
+#sets li span {
+    background: none repeat scroll 0 0 #999;
+    color: #fff;
+    margin-right: 10px;
+    padding: 0 2px;
+}
+#sets li:first-child, #sets li.first {
+    border-top: medium none;
+}
+#sets li:last-child, #sets li.last {
+    border-bottom: medium none;
+}

@@ -1,0 +1,95 @@
+﻿/*
+<ul>
+<li id="divfirst" class="first">
+  <div class="photo"> <a href="/?c=church/heresy&amp;sort=d_regis&amp;orderby=desc&amp;uid=1939"><img src="https://www.pasteve.com/files/2014/02/06/e11b48c46ee6dab34b74b844263d54f7141224.jpg" width="216" height="142" alt="" /><span class="transBorder"></span></a> <span class="transOver" style="display:none;"></span> </div>
+  <dl class="first">
+    <dt class="first"> <a href="/?c=church/heresy&amp;sort=d_regis&amp;orderby=desc&amp;uid=1939">쌤통 심리학, 샤덴프로이데</a> </dt>
+    <dd class="txt first"> <a href="/?c=church/heresy&amp;sort=d_regis&amp;orderby=desc&amp;uid=1939">옛말에 ‘사촌이 땅을 사면 배가 아프다’는 말이 있다. 타인이 잘되니 비교되고 질투가 생긴다는 뜻의 속담이다. 이와 반대되는 개념으로 ‘쌤통 심리학’이 있다. 독일어로 샤덴프로이데(Schadenfreude)라고 불리는 이 심리는 타인의 불행에 속으로 고소해하는 사람의 심리를 말한다. 타인으로 말미암아 어떤 해도 입지 않았지만 아무 이유 없이 남의 불행에 대해 기쁨이나 쾌감을...</a> </dd>
+    <dd class="xinfo first">
+      <div class="category"> 이단론 </div>
+      <div class="line">&nbsp;/&nbsp;</div>
+      <div class="part">댓글&nbsp;</div>
+      <div class="cnt">12</div>
+      <div class="line">&nbsp;/&nbsp;</div>
+      <div class="part">조회수&nbsp;</div>
+      <div class="cnt">4259</div>
+      <span class="line">&nbsp;/&nbsp;</span>
+							<span class="part">추천</span>
+							<span class="cnt">0</span> 
+    </dd>
+  </dl>
+  <div class="clear"></div>
+</li>
+<li id="divfirst" >
+  <dl >
+    <dt > <a href="/?c=church/heresy&amp;sort=d_regis&amp;orderby=desc&amp;uid=1539">이단감별사, 이렇게 이단 만든다</a> </dt>
+    <dd class="xinfo">
+      <div class="category"> 이단론 </div>
+      <div class="line">&nbsp;/&nbsp;</div>
+      <div class="part">댓글&nbsp;</div>
+      <div class="cnt">25</div>
+      <div class="line">&nbsp;/&nbsp;</div>
+      <div class="part">조회수&nbsp;</div>
+      <div class="cnt">7213</div>
+      <span class="line">&nbsp;/&nbsp;</span>
+							<span class="part">추천</span>
+							<span class="cnt">0</span> 
+    </dd>
+    <dd id="divtxt" class="txt">
+      <div class="rdiv"><a href="/?c=church/heresy&amp;sort=d_regis&amp;orderby=desc&amp;uid=1539">이단은 어떻게 만들어질까. 크리스천투데이 2009년 10월 23일자 ‘최삼경·박형택 식의 이단날조를 고발한 글’을 보면 그 방법을 적나라하게 알 수 있다.</a></div>
+      <div class="photo"> <a href="/?c=church/heresy&amp;sort=d_regis&amp;orderby=desc&amp;uid=1539"><img src="https://pasteve.com/files/2013/10/11/693706b062f3a4a7e5c88dd743a06eb4160026.jpg" width="150" height="99" /><span class="transBorder"></span></a> <span class="transOver" style="display:none;"></span> </div>
+    </dd>
+  </dl>
+  <div class="clear"></div>
+</li>
+</ul>
+
+
+INSERT INTO articles( title,fulltxt,metatitle,metadesc,
+	access_level, group_level, publish, status, notice,
+	categoriesid, ordering, views, password, user_ip,
+	modified_date, created_date, created_by,
+	created_by_alias, publish_date, filename, filesize
+)
+SELECT replace(replace(xd.title,'<',''),'>',''),xd.content, replace(replace(xd.title,'<',''),'>',''), replace(replace(xd.title,'<',''),'>',''), 
+7, 1, 1, 1, 0,
+xd.module_srl, replace(xd.list_order,'-',''), xd.readed_count, 7277,  xd.ipaddress, 
+xd.last_update, xd.regdate, xd.user_name, 
+xd.nick_name, xd.regdate, replace(xf.uploaded_filename,'./files/attach/',''), xf.file_size
+FROM xe_documents xd
+LEFT JOIN xe_files xf  ON xf.upload_target_srl = xd.document_srl
+
+INSERT INTO articles( title,fulltxt,metatitle,metadesc,
+	access_level, group_level, publish, status, notice,
+	categoriesid, ordering, views, password, user_ip,
+	modified_date, created_date, created_by,
+	created_by_alias, publish_date
+)
+SELECT replace(replace(xe_documents.title,'<',''),'>',''),xe_documents.content, replace(replace(xe_documents.title,'<',''),'>',''), replace(replace(xe_documents.title,'<',''),'>',''), 
+7, 1, 1, 1, 0,
+xe_documents.module_srl, replace(xe_documents.list_order,'-',''), xe_documents.readed_count, 7277,  xe_documents.ipaddress, 
+xe_documents.last_update, xe_documents.regdate, xe_documents.user_name, 
+xe_documents.nick_name, xe_documents.regdate
+FROM xe_documents;
+
+UPDATE articles SET sectionid = 3, categoriesid = 7 WHERE categoriesid = 110;
+UPDATE articles SET sectionid = 3, categoriesid = 6 WHERE categoriesid = 563;
+UPDATE articles SET sectionid = 5, categoriesid = 4 WHERE categoriesid = 201;
+
+
+TRUNCATE TABLE `opensef`;
+INSERT INTO opensef( tid, tbname, external, pid, direction, publish, created_date, modified_date, hits
+)
+SELECT articles.id, "articles",  concat("/", concat(concat(EXTRACT(MONTH FROM articles.created_date), EXTRACT(DAY FROM articles.created_date)), articles.id)), articles.categoriesid, articles.sectionid, 1, articles.created_date, articles.modified_date, articles.views
+FROM articles;
+
+UPDATE opensef SET pid = 2, direction = "" WHERE direction = 3 AND pid = 7;
+UPDATE opensef SET pid = 3, direction = "" WHERE direction = 3 AND pid = 8;
+UPDATE opensef SET pid = 4, direction = "" WHERE direction = 3 AND pid = 6;
+UPDATE opensef SET pid = 5, direction = "" WHERE direction = 3 AND pid = 5;
+UPDATE opensef SET pid = 6, direction = "" WHERE direction = 5 AND pid = 4;
+
+UPDATE articles_3
+SET fulltxt = REPLACE(fulltxt, 'http://arirangkorea.cafe24.com/xe/files/attach/images/', '/upload/images/')
+WHERE fulltxt != "";
+*/
